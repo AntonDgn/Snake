@@ -1,0 +1,98 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: url(img/snake_bg.png) center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.header{
+	width: 400px;
+	margin: 0 auto;
+	height: 100px;
+}
+
+.header > h1 {
+	color: #17e687;
+	text-shadow: 0px 2px 6px #031502;
+	font-size: 50px;
+    text-align: center;
+    margin: 10px 0 30px;
+}
+
+.header > p {
+	float: left;
+    width: 33%;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 0px 1px 4px #000;
+    margin: 0;
+}
+
+.game-field{
+	width: 410px;
+	height: 410px;
+	border: 2px solid #000;
+	margin: 25px auto 20px;
+	position: relative;
+	background: rgba(13, 13, 16, 0.38);
+}
+
+.snake-item {
+	display: block;
+	width: 8px;
+	height: 8px;
+	background-color: #26940a;
+	position: absolute;
+	border-radius: 35%;
+	box-shadow: 0px 0px 3px 1px rgba(13, 47, 4, 0.75);
+}
+
+.snake-head {
+	display: block;
+	width: 10px;
+	height: 10px;
+	color: orange;
+	position: absolute;
+	border-radius: 35%;
+}
+
+.start-btn {
+	display: block;
+	width: 200px;
+	height: 50px;
+	background-color: #26940a;
+	box-shadow: 0px 0px 3px 1px rgba(13, 47, 4, 0.75);
+	margin: 0 auto;
+	border: none;
+	border-radius: 25px;
+	color: #fff;
+	font: 30px/1 Helvetica, sans-serif;
+	outline: none;
+
+}
+
+.start-btn:hover,
+.start-btn:active {
+	outline: none;
+	background-color: #164c08;
+}
+
+.snake-item_food {
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: url(img/apple_bg.jpg);
+	background-size: cover;
+	position: absolute;
+	border-radius: 30%;
+}
+
+.copyright {
+	margin: 10px 0 0 0;
+	text-align: center;
+}
